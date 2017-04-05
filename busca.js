@@ -26,6 +26,12 @@ function explotar (){
 	imagen.src = "bomba.png";
 	imagen.style = "width: 40px ";
 	this.appendChild(imagen);
+ 
+	var boton=document.getElementById("tabla").getElementsByTagName('button');
+    for(var i=0; i<boton.length; ++i)
+        boton[i].disabled=true;
+
+    alert ("Esto ha explotado");
 }
 
 function seguir (){
@@ -36,3 +42,4 @@ function cercania (){
 	this.innerText = this.value;
 } 
 
+ 
